@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Education</title>
+<style type="text/css">
+<!--
+a{text-decoration:none:color;white}
+a:link{text-decoration:none;color:white}
+a:visited{text-decoration:none;color:white}
+a:active{text-decoration:none;color:white}
+a:hover{text-decoration:underline overline;color:white}
+-->
+</style>
+
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: white;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: black;
+      }
+    </style>
+<style>
+h2 {text-align: center;}
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+body {
+  font-family: arial;
+  background-image: url('photo/rose.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<a name="totop"></a>
+<h2>My Education</h2>
+<img src="photo/vintage.png" width="100%" height="50%"  alt="Aidila Banner">
+<table width="100%" align="center" cellpadding="10">
+<tr align="center" bgcolor="#B06B48">
+<th><a href="index.html">HOME</a></th>
+<th><a href="biodata.html">BIODATA</a></th>
+<th><a href="education.html">EDUCATION</a></th>
+<th><a href="experience.html">EXPERIENCE</a></th>
+<th><a href="family.html">FAMILY</a></th>
+<th><a href="favourite.html">FAVOURITE</a></th>
+<th><a href="gallery.html">GALLERY</a></th>
+</tr>
+</table>
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="photo/ev2.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="photo/sm2.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="photo/tad.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="photo/smkclass.jpg" style="width:50%"></a>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 7 seconds
+}
+</script>
+<br>
+<table width="95%" align="center" cellpadding="10">
+<tr align="center" bgcolor="#B06B48">
+<th>TABIKA KEMAS</th>
+</tr>
+<tr align="center" bgcolor="#B3A4B0">
+<td>Tabika Kemas I started my studies in a neat kindergarten at the age of 5 to 6 years old. This kindergarten is located close to my house which only takes 10 minutes to reach. At first, I was a bit timid to meet or meet new friends but after almost 2 years there I had many friends who later went to the same primary school as me. Not many memories I can remember during kindergarten, but what i remember is that the food prepared there is very tasty and a lot of toys taht I can play. After 2 years I finished my studies here and continued my studies to the primary school level.</td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<td><figure><img src="photo/tad.jpg" align="center" width="500" height="300"><figcaption>1.My classmate during kindergarten.</figcaption></figure></td></td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<th>SK SERI BAYU</th>
+</tr>
+<tr align="center" bgcolor="#B3A4B0">
+<td>Next, I continued my studies to Sekolah Kebangsaan Seri Bayu, Penang from 2007 to 2012. At first, I was so excited to enter this school I was looking forward to what I would face, but as a relatively quiet person I also felt a little scared. Eventhough I am like that, I was able to get through it successfully. In this school I am required to participate in 3 co-curricular activities. Namely the uniformed body of the School Youth Cadet, visual arts club and netball sports club. But I am not a very active person in co-curricular activities. Despite that thank you to the art club, due to the activities of this club I was able to find out my interest more in the field of art. Besides that, in my studies I got some awards but I am not a very smart person, I am just a normal student =D. After 6 years of being there, I finished primary school with a 4A 1B result in the UPSR.</td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<td><figure><img src="photo/seri.jpg" align="center" width="500" height="300"><figcaption>2.Assembly at SK Seri Bayu</figcaption></figure></td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<th>SMK TELOK KUMBAR</th>
+</tr>
+<tr align="left" bgcolor="#B3A4B0">
+<td>After that, I continued my studies to the secondary school level from 2013 to 2017. At first, I wanted to register as an MRSM student but I did not pass their qualifications. So both my parents sent me to a regular secondary school which is SMK Telok Kumbar<a href=https://ms.wikipedia.org/wiki/Sekolah_Menengah_Kebangsaan_Telok_Kumbar target="_blank"><sub>SMKTK</sub></a>. Here I am a hostel student, although it is only a rural school it has a daily dormitory that can accommodate a small number of students not like a full dormitory. Life in hostel is an unforgettable memory. There I began to learn to be independent and know a lot of types of people. After three years of schooling, in 2015 I sat for the PT3 exam and I got 4A out of 9 subjects. After that, I was taken into a pure science stream class. This flow class is really challenging for me who is less proficient in math. Therefore, to cover the weakness I took the art subject in addition as my teacher's recommendation to sit for SPM. So, the total number of subjects I took was 10 subjects. For your information, I am not a biology student but I am an Engineering Drawing student. This subject is a subject that I am quite interested in. After 2 years of hard work, I sat for SPM and obtained 4A out of ten subjects taken. I feel so grateful for this meager success, yet it is enough for me who is relatively weak in the subject of pure science class.</td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<td><figure><img src="photo/smk2.jpg" align="center" width="490" height="300"><figcaption>3.The picture with our Engeneering teacher.</figcaption></figure></td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<th>UITM CAWANGAN KEDAH</th>
+</tr>
+<tr align="center" bgcolor="#B3A4B0">
+<td>After that, I continued my studies to a higher level which is the University which is where I am now. I was accepted into University Technology MARA Kedah branch<a href=https://kedah.uitm.edu.my/ target="_blank"><sub>UiTMK</sub></a>,in 2018, in the Diploma in Information Management. This major takes 2 years to complete my studies and I am currently in my second year, final semester. For your information before this, I managed to enter form 6 and was placed in the history stream class while waiting for the UPU results to come out, then after that I decided to continue to university. My journey through these five semesters was quite challenging but at the same time a lot of knowledge I gained in this field. Thanks to all my lecturers who worked hard to teach me, and then caused me to acquire various knowledge and abilities that can be applied in the real world. Here too, I meet my new friends who came from various states throughout Malaysia. I am now in the last semester, and I hope I can finish my studies with excellent results. I also hope to further my studies to the bachelor's degree level in the future.</td>
+</tr>
+<tr align="center" bgcolor="#B06B48">
+<td></figure><img src="photo/class.jpg" align="center" width="500" height="350"<figcaption>4.Our fisrt university class picture.</figcaption></figure></td>
+</tr>
+</table>
+<a href="#totop"><img src="photo/gotop.png" align="center"></div>
+</body>
+</html>

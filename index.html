@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home.css">
+<title>Nur Aidila Annuar Homepage</title>
+<style type="text/css">
+<!--
+a{text-decoration:none:color;white}
+a:link{text-decoration:none;color:white}
+a:visited{text-decoration:none;color:white}
+a:active{text-decoration:none;color:white}
+a:hover{text-decoration:underline overline;color:white}
+-->
+</style>
+<meta charset="UTF-8">
+</head>
+<style>
+h2 {text-align: center;}
+body {
+  font-family: arial;
+  background-image: url('photo/rose.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<body>
+<a name="totop"></a>
+<h2>My Homepage</h2>
+<img src="photo/vintage.png" width="100%" height="50%"  alt="Aidila Banner">
+<table width="100%" align="center" cellpadding="10">
+<tr align="center" bgcolor="#B06B48">
+<th><a href="index.html">HOME</a></th>
+<th><a href="biodata.html">BIODATA</a></th>
+<th><a href="education.html">EDUCATION</a></th>
+<th><a href="experience.html">EXPERIENCE</a></th>
+<th><a href="family.html">FAMILY</a></th>
+<th><a href="favourite.html">FAVOURITE</a></th>
+<th><a href="gallery.html">GALLERY</a></th>
+</tr>
+</table>
+<div class="icon-bar">
+  <a href=https://www.facebook.com/nur.aidila.98 class="facebook"><i class="fa fa-facebook"><img src="photo/fb2.png"></i></a>
+  <a href=https://www.instagram.com/aidila_annuar/ class="instagram"><i class="fa fa-instagram"><img src="photo/insta3.png"></i></a>
+  <a href=https://www.google.com/ class="google"><i class="fa fa-google"><img src="photo/google.png"></i></a>
+  <a href=https://www.youtube.com/channel/UCl8mLGgQ9-XUWCLCMAX-G-A?view_as=subscriber class="youtube"><i class="fa fa-youtube"><img src="photo/youtube.png"></i></a>
+</div>
+<table width="100%" height="60%" align="center">
+<tr align="center">
+<th colspan="6" bgcolor="#E3BCA8">Hi, Welcome to My Personal Website !!! &#128151;</th>
+<td rowspan="4" bgcolor="#E3BCA8">
+<br>
+<canvas id="canvas" width="150" height="150" style="background-color:#E3BCA8">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+<br>
+<br>
+<a href='https://www.free-counters.org/'>www.free-counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=826e2c59e0d06e172ba7498bb1741e1f0534ed8f'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/775583/t/0"></script>
+<br>
+<br>
+<br>
+<img src="photo/ft2.jpg" width="250" height="450" alt="hi assalamuailaikum">
+</td>
+</tr>
+<tr align="center">
+<td colspan="6"><img src="photo/firstme.png" width="400" height="400" align="center">
+<marquee direction = "left">
+<h1 style="padding-top: 100px; color:white;">Beauty is Power A Smile is Its Sword</h>
+</marquee>
+</td>
+</tr>
+<tr align="center" bgcolor="#E3BCA8">
+<th colspan="6">Summary of about My Personal Website</th>
+</tr>
+
+<tr align="center" bgcolor="#B06B48">
+<td colspan="6">First of all, this website is all about me. The content is divided into seven parts as you can see, namely biodata, education, experience, family, favorites and gallery. Greetings for all who see this website. As mentioned my name is Aidila, from class KIM110 5C. In short, the purpose of this website is to complete the assignment given by my lecturer. Therefore, I would like to thank <font color="blue">Mr.Mohd Firdaus Mohd Helmi</font>, as a lecturer in the subject IMD311 for helping and teaching us how to produce a good website. He also helped a lot in completing this task. Finally, I hope that the work produced can benefit others and I apologize if there are shortcomings in this website. Thank you. Enjoy &#128513;</td>
+</tr>
+</table>
+<embed src="sound/nujum.mp3" autoplay="true" hidden="true"></embed>
+<a href="#totop"><img src="photo/gotop.png">
+</body>
+</html>

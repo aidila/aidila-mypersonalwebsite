@@ -1,0 +1,16 @@
+img.wrap {float: right}
+
+#table1 {
+         border-collapse: seprate;
+         border-spacing: 5px;
+         table-layout: fixed;
+         width=80%;
+}
+
+#table2 {
+         border-collapse: seprate;
+         border-spacing: 5px;
+         table-layout: fixed;
+         width=85%;
+}
+ 

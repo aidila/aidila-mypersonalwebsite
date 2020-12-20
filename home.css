@@ -1,0 +1,51 @@
+<style>
+body {margin:0;height:2000px;}
+.icon-bar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 10px;
+}
+.icon-bar a:hover {
+  background-color: black;
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 5px;
+  text-align: center;
+  margin: 5px 2px;
+}
+
+.facebook {
+  background: white;
+  color: white;
+}
+.google {
+  background: white;
+  color: white;
+}
+.instagram {
+  background: white;
+  color: white;
+}
+.youtube {
+  background: white;
+  color: white;
+}
+.content {
+  margin-right: 75px;
+  font-size: 30px;
+}
+</style>
